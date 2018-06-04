@@ -39,13 +39,13 @@ function carimbador_ativar( $plugin ) {
 }
 add_action( 'activated_plugin', 'carimbador_ativar' );
 
-function plugin_add_settings_link( $links ) {
+function carimbador_plugin_add_settings_link( $links ) {
     $settings_link = '<a href="'.admin_url( 'admin.php?page=carimbador' ).'">' . __( 'Settings' ) . '</a>';
     array_push( $links, $settings_link );
   	return $links;
 }
 $plugin = plugin_basename( __FILE__ );
-add_filter( "plugin_action_links_$plugin", 'plugin_add_settings_link' );
+add_filter( "plugin_action_links_$plugin", 'carimbador_plugin_add_settings_link' );
 
 
 ?>
