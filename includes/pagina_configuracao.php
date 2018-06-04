@@ -9,7 +9,7 @@ function carimbador_options_page()
         'manage_options',
         'carimbador',
         'carimbador_options_page_html',
-        plugins_url( 'carimbador/img/icon.png'),
+        plugins_url( 'carimbador/img/icon.png',__FILE__),
         20
     );
 }
@@ -230,7 +230,7 @@ function carimbador_setting_cb_fontfamily(){
 
 function carimbador_options_page_html(){
 	?><div class="wrap">
-<h1><img src="<?php echo plugins_url( 'carimbador/img/icon.png')?>">&nbsp;Carimbador Maluco</h1>
+<h1><img src="<?php echo plugins_url( 'carimbador/img/icon.png',__FILE__)?>">&nbsp;Carimbador Maluco</h1>
 	<form method="POST" action="options.php">
 	<?php 	settings_fields( 'carimbador' );	//pass slug name of page, also referred
                                         //to in Settings API as option group name
