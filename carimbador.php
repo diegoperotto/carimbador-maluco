@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Carimbador Maluco
- * Description: Plugin para carimbar PDFs com dados do comprador.
+ * Description: Carimbador Maluco é um jeito simples de estampar uma frase nos PDFs baixáveis da sua loja Woocommerce
  * Version: 1.0.1
  * Author: Diego Perotto
  * Author URI: https://casalcroche.com.br
